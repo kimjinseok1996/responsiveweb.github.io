@@ -1,0 +1,238 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        body{
+            max-width: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            font-family: 'Kanit', sans-serif;
+        }
+        header{
+            position: fixed;
+            top: 0;
+            z-index: 99;
+            background: white;
+            width: 100%;
+            height: 60px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            line-height: 50px;
+            overflow: hidden;
+        }
+        header a{
+            float: right;
+            padding: 5px 30px;
+        }
+        header a:nth-child(1){
+            float: left;
+        }
+        header a:nth-child(1) span{
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        header a:hover{
+            background: #eaeaea;
+        }         
+        #bodywrap{
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+        #banner{
+            width: 100%;
+            position: relative;         
+        }
+        #banner p{
+            font-size: 40px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-130px, -30px);
+        }
+        #banner p span{
+            padding: 5px 15px;
+            background: rgba(0,0,0,0.7);
+            font-weight: bold;
+        }
+        #banner b{
+            display: none;
+            font-size: 40px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50px, -10px);
+            padding: 5px 15px;
+            background: rgba(0,0,0,0.7);
+            font-weight: bold;
+        }
+        #banner img{
+            width: 100%;
+        }
+        #projectwrap{
+            width: 100%;
+            height: auto;
+        }
+        .projectimg{
+            float: left;
+            width: 23%;
+            margin: 1%;
+            position: relative;
+        }
+        .projectimg img{
+            width: 100%;
+        }
+        .projectimg:after{
+            content: "Summer House";
+            clear: both;
+            display: block;
+            background: black;
+            color: white;
+            font-size: 16px;
+            padding: 5px 15px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .projectimg:nth-child(2):after{
+            content: "Brick House";
+        }
+        .projectimg:nth-child(3):after{
+            content: "Renovated";
+        }
+        .projectimg:nth-child(4):after{
+            content: "Barn House";
+        }
+        .projectimg:nth-child(5):after{
+            content: "Summer House";
+        }
+        .projectimg:nth-child(6):after{
+            content: "Brick House";
+        }
+        .projectimg:nth-child(7):after{
+            content: "Renovated";
+        }
+        .projectimg:nth-child(8):after{
+            content: "Barn House";
+        }
+        .title{
+            font-size: 25px;
+        }
+        #aboutwrap{
+            clear: both;
+        }
+        .aboutbox{
+            width: 23%;
+            margin: 1%;
+            float: left;
+        }
+        .aboutbox p:nth-child(2){
+            font-size: 27px;
+            font-weight: bold;
+        }
+        .aboutbox p:nth-child(4){
+            font-size: 12px;
+            color: #666;
+        }
+        .aboutbox button{
+            height:  30px;
+            background: #eaeaea;
+            border: none;            
+        }
+        .aboutbox button:hover{
+            background: #ccc;
+            cursor: pointer;
+        }
+        .aboutbox img{
+            width: 100%;
+            filter: grayscale(70%);
+        }
+        .aboutbox button{
+            width: 100%;
+        }
+        #contactwrap{
+            clear: both;
+            padding-top: 50px;
+        }
+        #contactwrap input{
+            width: 98%;
+            height: 25px;
+            border: 1px solid #666;
+            color: #666;
+            margin-top: 10px;
+            padding: 5px;
+        }
+        #contactwrap button{
+            height: 30px;
+            margin-top: 30px;
+            border: none;
+            background: black;
+            color: white;
+            padding: 0 10px;
+        }
+        #contactwrap button:hover{
+            background: #ccc;
+            cursor: pointer;
+            color: black;
+        }
+        #footerimg{
+            margin-top: 100px;
+            width: 100%;
+        }
+        footer{
+            width: 100%;
+            background: black;
+            color: white;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+        }
+        footer a{
+            color: white;
+            text-decoration: underline;
+        }
+        footer a:hover{
+            color: green;
+        }
+        
+        
+        @media (max-width:1200px){
+            .aboutbox{
+                width: 48%;
+                float: left;
+            }
+            .projectimg{
+                width: 48%;
+                float: left;
+            }
+        }
+        @media (max-width:750px){
+            .aboutbox{
+                width: 100%;
+                clear: both;
+            }
+            .projectimg{
+                width: 100%;
+                clear: both;
+            }
+            header a{
+                display: none;
+            }
+            header a:nth-child(1){
+                display: block;
+            }
+            #banner p{
+                display: none;
+            }
+            #banner b{
+                display: block;
+            }
+        }
